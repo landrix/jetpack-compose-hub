@@ -8,11 +8,11 @@ apply from: "$rootDir/dependencies.gradle"
 
 android {
     namespace 'app.prachang.gmail_clone'
-    compileSdk 32
+    compileSdk 34
 
     defaultConfig {
         minSdk 21
-        targetSdk 32
+        targetSdk 34
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -25,12 +25,13 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = '17'
     }
+
     buildFeatures {
         compose true
     }
@@ -46,13 +47,13 @@ dependencies {
     implementation(project(":theme"))
     implementation(project(":dummy-data"))
     implementation compose
-    implementation accompaniest.flow_layout
+    implementation "com.google.accompanist:accompanist-flowlayout:0.32.0"
 
-    implementation hilt.hilt
+    implementation "com.google.dagger:hilt-android:2.48"
     implementation hilt.hilt_navigation
-    kapt hilt.hilt_compiler
+    kapt "com.google.dagger:hilt-android-compiler:2.48"
 
-    implementation accompaniest.ui_controller
+    implementation "com.google.accompanist:accompanist-systemuicontroller:0.32.0"
 
-    implementation materialDesign.material3
+    implementation 'androidx.compose.material3:material3:1.1.1'
 }

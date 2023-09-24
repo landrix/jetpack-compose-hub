@@ -1,6 +1,6 @@
 ext {
     versions = [
-            compose_version = '1.2.0-rc01',
+            compose_version = '1.4.3',
             compose_navigation = '2.5.0-alpha03',
             kotlin_version = '1.6.21',
             accompaniest_version = '0.24.3-alpha',
@@ -9,20 +9,20 @@ ext {
     ]
 
     materialDesign = [
-            "material3": "androidx.compose.material3:material3:1.0.0-alpha06",
+            "material3": "androidx.compose.material3:material3:1.1.1",
             "material" : "androidx.compose.material:material:$compose_version"
     ]
 
     compose = [
-            "androidx.compose.ui:ui:$compose_version",
-            "androidx.compose.ui:ui-tooling-preview:$compose_version",
-            "androidx.compose.material:material-icons-extended:$compose_version",
-            "androidx.compose.foundation:foundation:$compose_version",
-            "androidx.compose.foundation:foundation-layout:$compose_version",
-            "androidx.compose.ui:ui-viewbinding:$compose_version",
-            "androidx.navigation:navigation-compose:$compose_navigation",
-            "androidx.activity:activity-compose:1.4.0",
-            materialDesign.material,
+            "androidx.compose.ui:ui:1.5.1",
+            "androidx.compose.ui:ui-tooling-preview:1.5.1",
+            "androidx.compose.material:material-icons-extended:1.5.1",
+            "androidx.compose.foundation:foundation:1.5.1",
+            "androidx.compose.foundation:foundation-layout:1.5.1",
+            "androidx.compose.ui:ui-viewbinding:1.5.1",
+            "androidx.navigation:navigation-compose:2.7.3",
+            'androidx.activity:activity-compose:1.7.2',
+            "androidx.compose.material:material:1.5.1",
     ]
 
     accompaniest = [
@@ -47,11 +47,11 @@ ext {
 
     testing = [
             "junit:junit:4.13.2",
-            "androidx.test.ext:junit:1.1.3",
-            "androidx.test.espresso:espresso-core:3.4.0",
-            "androidx.compose.ui:ui-test-junit4:$compose_version",
-            "androidx.compose.ui:ui-tooling:$compose_version",
-            "androidx.compose.ui:ui-test-manifest:$compose_version"
+            'androidx.test.ext:junit:1.1.5',
+            'androidx.test.espresso:espresso-core:3.5.1',
+            "androidx.compose.ui:ui-test-junit4:1.5.1",
+            "androidx.compose.ui:ui-tooling:1.5.1",
+            "androidx.compose.ui:ui-test-manifest:1.5.1"
     ]
 
     lottieAnimation = "com.airbnb.android:lottie-compose:5.0.2"
@@ -59,9 +59,9 @@ ext {
 }
 
 dependencies {
-    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.0-alpha01'
-    implementation 'androidx.appcompat:appcompat:1.4.2'
-    implementation 'androidx.core:core-ktx:1.8.0'
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.2'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.core:core-ktx:1.12.0'
 }
 
 /*

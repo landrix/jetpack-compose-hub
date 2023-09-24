@@ -5,11 +5,11 @@ plugins {
 apply from: "$rootDir/dependencies.gradle"
 
 android {
-    compileSdk 31
+    compileSdk 34
 
     defaultConfig {
         minSdk 21
-        targetSdk 31
+        targetSdk 34
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -22,12 +22,13 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = '17'
     }
+
 
     buildFeatures {
         compose true
@@ -35,10 +36,11 @@ android {
     composeOptions {
         kotlinCompilerExtensionVersion compose_version
     }
+    namespace 'app.prachang.theme'
 }
 
 dependencies {
     implementation(compose)
-    implementation(materialDesign.material3)
-    implementation(accompaniest.ui_controller)
+    implementation('androidx.compose.material3:material3:1.1.1')
+    implementation("com.google.accompanist:accompanist-systemuicontroller:0.32.0")
 }
