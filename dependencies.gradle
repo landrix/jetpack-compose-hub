@@ -14,15 +14,15 @@ ext {
     ]
 
     compose = [
-            "androidx.compose.ui:ui:1.5.1",
-            "androidx.compose.ui:ui-tooling-preview:1.5.1",
-            "androidx.compose.material:material-icons-extended:1.5.1",
-            "androidx.compose.foundation:foundation:1.5.1",
-            "androidx.compose.foundation:foundation-layout:1.5.1",
-            "androidx.compose.ui:ui-viewbinding:1.5.1",
-            "androidx.navigation:navigation-compose:2.7.3",
-            'androidx.activity:activity-compose:1.7.2',
-            "androidx.compose.material:material:1.5.1",
+            'androidx.compose.ui:ui:1.5.3',
+            'androidx.compose.ui:ui-tooling-preview:1.5.3',
+            'androidx.compose.material:material-icons-extended:1.5.3',
+            'androidx.compose.foundation:foundation:1.5.3',
+            'androidx.compose.foundation:foundation-layout:1.5.3',
+            'androidx.compose.ui:ui-viewbinding:1.5.3',
+            'androidx.navigation:navigation-compose:2.7.4',
+            'androidx.activity:activity-compose:1.8.0',
+            'androidx.compose.material:material:1.5.3',
     ]
 
     accompaniest = [
@@ -49,9 +49,9 @@ ext {
             "junit:junit:4.13.2",
             'androidx.test.ext:junit:1.1.5',
             'androidx.test.espresso:espresso-core:3.5.1',
-            "androidx.compose.ui:ui-test-junit4:1.5.1",
-            "androidx.compose.ui:ui-tooling:1.5.1",
-            "androidx.compose.ui:ui-test-manifest:1.5.1"
+            'androidx.compose.ui:ui-test-junit4:1.5.3',
+            'androidx.compose.ui:ui-tooling:1.5.3',
+            'androidx.compose.ui:ui-test-manifest:1.5.3'
     ]
 
     lottieAnimation = "com.airbnb.android:lottie-compose:5.0.2"
